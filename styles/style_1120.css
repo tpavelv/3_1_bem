@@ -45,10 +45,10 @@
   align-self: center;
 }
 .main__menu-button--repair {
-  background-image: url(./images/header/ic/repair.svg);
+  background-image: url("../images/header/ic/repair.svg");
 }
 .main__menu-button--checkstatus {
-  background-image: url(./images/header/ic/checkstatus.svg);
+  background-image: url("../images/header/ic/checkstatus.svg");
 }
 
 .main__content {
