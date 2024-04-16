@@ -85,7 +85,7 @@ body {
   order: -1;
 }
 .header__menu-button--repair {
-  background-image: url(./images/header/ic/repair.svg);
+  background-image: url(../images/header/ic/repair.svg);
   position: relative;
 }
 .header__menu-button--repair::before {
