@@ -81,7 +81,7 @@ body {
   height: 40px;
 }
 .header__menu-button--burger {
-  background-image: url(./images/header/ic/burger.svg);
+  background-image: url(images/header/ic/burger.svg);
   order: -1;
 }
 .header__menu-button--repair {
