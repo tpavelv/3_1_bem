@@ -1,0 +1,211 @@
+@font-face {
+  font-weight: 300;
+  font-family: "TT Lakes";
+  src: url(/fonts/TTLakes/TTLakes-Light.woff);
+}
+@font-face {
+  font-weight: 400;
+  font-family: "TT Lakes";
+  src: url(/fonts/TTLakes/TTLakes-Regular.woff);
+}
+@font-face {
+  font-weight: 500;
+  font-family: "TT Lakes";
+  src: url(/fonts/TTLakes/TTLakes-Medium.woff);
+}
+@font-face {
+  font-weight: 700;
+  font-family: "TT Lakes";
+  src: url(/fonts/TTLakes/TTLakes-Bold.woff);
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "TT Lakes", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #1b1c21;
+  height: 100%;
+}
+.container {
+  min-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+}
+.button {
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  font-family: "TT Lakes", sans-serif;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  opacity: 0.3;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 88px;
+  box-shadow: inset 0px -1px 0px 0px rgba(217, 255, 245, 1);
+}
+.header__central-column {
+  display: none;
+}
+.header__left-column {
+  display: flex;
+  width: 170px;
+  align-items: center;
+}
+.header__right-column {
+  display: flex;
+  width: 118px;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header__logo {
+  margin: 0 auto;
+}
+.header__menu-button {
+  width: 40px;
+  height: 40px;
+}
+.header__menu-button--burger {
+  background-image: url(/images/header/ic/burger.svg);
+  order: -1;
+}
+.header__menu-button--repair {
+  background-image: url(/images/header/ic/repair.svg);
+  position: relative;
+}
+.header__menu-button--repair::before {
+  content: "";
+  width: 2px;
+  height: 32px;
+  border: none;
+  border-radius: 1px;
+  background-color: #eaeaea;
+  right: 60px;
+  top: 4px;
+  position: absolute;
+}
+
+.header__menu-button--checkstatus {
+  background-image: url(/images/header/ic/checkstatus.svg);
+}
+
+.header__menu-button--call {
+  background-image: url(/images/header/ic/call.svg);
+}
+.header__menu-button--chat {
+  background-image: url(/images/header/ic/chat.svg);
+}
+.header__menu-button--profile {
+  background-image: url(/images/header/ic/profile.svg);
+}
+
+/* MAIN */
+
+.main {
+  background-color: #f8f8f8;
+  min-height: 100%;
+}
+
+.main__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 16px;
+  font-size: 28px;
+  line-height: 40px;
+  position: relative;
+}
+.main__title::before {
+  content: "";
+  width: 4px;
+  height: 40px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #41f6d7;
+  left: 0;
+  position: absolute;
+}
+.main__menu-short {
+  display: none;
+}
+.main__navigation {
+  margin-bottom: 24px;
+}
+.main__navigation-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 16px;
+  display: flex;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.main__navigation-list::-webkit-scrollbar {
+  display: none;
+}
+
+.main__navigation-list::-webkit-scrollbar-thumb {
+  display: none;
+}
+.main__navigation-button {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #7e7e82;
+}
+.main__navigation-button--active {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+.main__content-paragraph {
+  margin: 16px;
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  height: 90px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.main__content-image {
+  min-height: 176px;
+  background: url(/images/main/_MG_3223.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main__content-button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-left: 48px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.main__content-button::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(/images/main/ic/expand.svg);
+  left: -32px;
+  position: absolute;
+}
