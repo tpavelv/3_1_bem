@@ -1,17 +1,17 @@
 @font-face {
   font-weight: 300;
   font-family: "TT Lakes";
-  src: url(/fonts/TTLakes/TTLakes-Light.woff);
+  src: url(../fonts/TTLakes/TTLakes-Light.woff);
 }
 @font-face {
   font-weight: 400;
   font-family: "TT Lakes";
-  src: url(/fonts/TTLakes/TTLakes-Regular.woff);
+  src: url(../fonts/TTLakes/TTLakes-Regular.woff);
 }
 @font-face {
   font-weight: 700;
   font-family: "TT Lakes";
-  src: url(/fonts/TTLakes/TTLakes-Bold.woff);
+  src: url(../fonts/TTLakes/TTLakes-Bold.woff);
 }
 html {
   height: 100%;
