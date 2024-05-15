@@ -116,6 +116,30 @@ body {
   min-height: 100%;
 }
 
+.mobile-menu {
+}
+.main__mobile-menu {
+  width: 320px;
+  height: 100%;
+  border: 2px solid red;
+  box-shadow: -2px 0px 4px 0px #454f7e05, 16px 0px 52px 0px #0e185033;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+.mobile-menu__header {
+}
+.mobile-menu__menu-list {
+}
+.mobile-menu__menu-item {
+}
+.mobile-menu__contacts {
+}
+.mobile-menu__languages {
+}
+
 .main__title {
   margin: 0;
   margin-bottom: 24px;
