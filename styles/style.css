@@ -151,6 +151,21 @@ body {
   white-space: nowrap;
   overflow: scroll;
 }
+/* Тускнение */
+.main__navigation-list::before {
+  content: "";
+  width: 24px;
+  height: 40px;
+  border: 1px solid;
+  position: absolute;
+  right: 0px;
+  background-image: linear-gradient(
+    to left,
+    rgba(248, 248, 248, 1),
+    rgba(248, 248, 248, 0)
+  );
+}
+
 .main__navigation-list::-webkit-scrollbar {
   display: none;
 }
