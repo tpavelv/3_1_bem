@@ -156,7 +156,6 @@ body {
   content: "";
   width: 24px;
   height: 40px;
-  border: 1px solid;
   position: absolute;
   right: 0px;
   background-image: linear-gradient(
