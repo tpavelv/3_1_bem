@@ -1,22 +1,17 @@
 @font-face {
   font-weight: 300;
   font-family: "TT Lakes";
-  src: url(./fonts/TTLakes/TTLakes-Light.woff);
+  src: url(/fonts/TTLakes/TTLakes-Light.woff);
 }
 @font-face {
   font-weight: 400;
   font-family: "TT Lakes";
-  src: url(./fonts/TTLakes/TTLakes-Regular.woff);
-}
-@font-face {
-  font-weight: 500;
-  font-family: "TT Lakes";
-  src: url(./fonts/TTLakes/TTLakes-Medium.woff);
+  src: url(/fonts/TTLakes/TTLakes-Regular.woff);
 }
 @font-face {
   font-weight: 700;
   font-family: "TT Lakes";
-  src: url(./fonts/TTLakes/TTLakes-Bold.woff);
+  src: url(/fonts/TTLakes/TTLakes-Bold.woff);
 }
 html {
   height: 100%;
@@ -187,12 +182,6 @@ body {
   text-align: left;
 }
 
-.main__content-image {
-  min-height: 176px;
-  background: url("../images/main/MG_3223.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .main__content-button {
   font-size: 16px;
   line-height: 24px;
@@ -209,4 +198,9 @@ body {
   background-image: url("../images/main/ic/expand.svg");
   left: -32px;
   position: absolute;
+}
+.main__content-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }

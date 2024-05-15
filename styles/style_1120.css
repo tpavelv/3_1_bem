@@ -1,5 +1,5 @@
 .container {
-  min-width: 1120px;
+  /* Если будем центровать*/
 }
 /* HEADER */
 .header {
@@ -10,8 +10,8 @@
   display: flex;
   margin-top: 42px;
   margin-bottom: 8px;
+  margin-right: 24px;
   justify-content: space-between;
-  width: 1096px;
 }
 .main__title {
   padding: 0;
@@ -53,17 +53,21 @@
 
 .main__content {
   display: flex;
-  width: 1096px;
+  min-width: 1064px;
+  margin-left: 34px;
+  margin-right: 24px;
+  gap: 36px;
 }
 .main__content-description {
-  margin-left: 34px;
-  margin-right: 36px;
+  flex-basis: 490px;
+  flex-grow: 1;
 }
 .main__content-paragraph {
   margin: 0;
-  width: 490px;
   height: 160px;
   line-height: 20px;
+  height: auto;
+  max-height: 80%;
 }
 .main__content-button {
   margin-left: 33px;
@@ -71,7 +75,8 @@
 }
 
 .main__content-image {
-  width: 100%;
-  height: 307px;
+  min-width: 536px;
+  flex-basis: 536px;
+  flex-grow: 1;
   border-radius: 5px;
 }

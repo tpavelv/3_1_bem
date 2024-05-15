@@ -1,6 +1,3 @@
-.container {
-  min-width: 768px;
-}
 /* HEADER */
 .header {
   padding: 0 24px;
@@ -51,14 +48,15 @@
 
 .main__content {
   display: flex;
-  justify-content: space-between;
-  width: 720px;
-  margin: 0 auto;
+  min-width: 720px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-bottom: 40px;
+  gap: 48px;
 }
 
 .main__content-paragraph {
   margin: 0;
-  width: 312px;
   height: 160px;
   line-height: 20px;
 }
@@ -68,10 +66,12 @@
   margin-bottom: 0;
 }
 .main__content-description {
-  width: 312px;
+  flex-basis: 312px;
+  flex-grow: 1;
 }
 .main__content-image {
-  width: 360px;
-  height: 208px;
+  min-width: 360px;
+  flex-basis: 360px;
+  flex-grow: 1;
   border-radius: 5px;
 }
