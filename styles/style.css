@@ -118,8 +118,10 @@ body {
 
 .main__mobile-menu {
   width: 320px;
+  /* min-height: 100%; */
+  /* max-height: 100%; */
   /* min-height: 1024px; */
-  max-height: 100%;
+  height: 100%;
   font-size: 16px;
   line-height: 24px;
   box-shadow: -2px 0px 4px 0px #454f7e05, 16px 0px 52px 0px #0e185033;
