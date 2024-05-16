@@ -118,8 +118,8 @@ body {
 
 .main__mobile-menu {
   width: 320px;
-  min-height: 1024px;
-  /* max-height: 100%; */
+  /* min-height: 1024px; */
+  max-height: 100%;
   font-size: 16px;
   line-height: 24px;
   box-shadow: -2px 0px 4px 0px #454f7e05, 16px 0px 52px 0px #0e185033;
@@ -128,6 +128,7 @@ body {
   left: 0;
   background-color: #ffffff;
   z-index: 1000;
+  overflow-y: scroll;
 }
 
 .mobile-menu__header {
@@ -205,7 +206,7 @@ body {
   list-style-type: none;
   padding: 0 24px;
   margin: 0;
-  margin-top: 268px;
+  /* margin-top: 268px; */
 }
 .mobile-menu__contact-item {
   margin-bottom: 12px;
