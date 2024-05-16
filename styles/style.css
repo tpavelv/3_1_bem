@@ -118,9 +118,6 @@ body {
 
 .main__mobile-menu {
   width: 320px;
-  /* min-height: 100%; */
-  /* max-height: 100%; */
-  /* min-height: 1024px; */
   height: 100%;
   font-size: 16px;
   line-height: 24px;
@@ -208,7 +205,7 @@ body {
   list-style-type: none;
   padding: 0 24px;
   margin: 0;
-  /* margin-top: 268px; */
+  margin-top: 268px;
 }
 .mobile-menu__contact-item {
   margin-bottom: 12px;
