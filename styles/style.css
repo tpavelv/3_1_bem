@@ -227,27 +227,40 @@ body {
 .mobile-menu__button--profile {
   background-image: url("../images/header/ic/profile.svg");
 }
-
-.mobile-menu__languages-list {
-  list-style-type: none;
-  margin: 0;
+/* язык радио */
+.mobile-menu__languages {
   margin-top: 40px;
   margin-bottom: 32px;
   padding: 0 24px;
   display: flex;
   gap: 7px;
 }
+
 .mobile-menu__languages-item {
   margin: 0;
   padding: 0;
 }
-.mobile-menu__languages-button {
-  font-size: 16px;
-  line-height: 24px;
-}
-.mobile-menu__languages-button--active {
+.mobile-menu__languages-radio:checked + .mobile-menu__languages-radio-name {
   color: #7e7e82;
 }
+.mobile-menu__languages-radio:hover + .mobile-menu__languages-radio-name {
+  opacity: 0.5;
+}
+.mobile-menu__languages-radio:active + .mobile-menu__languages-radio-name {
+  opacity: 0.3;
+}
+.mobile-menu__languages-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* язык радио */
+
 /* MAIN */
 .main__title {
   margin: 0;
