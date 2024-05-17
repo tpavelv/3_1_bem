@@ -130,6 +130,7 @@ body {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  display: none; /* !!! */
 }
 
 .mobile-menu__header {
@@ -169,27 +170,27 @@ body {
   margin-bottom: 32px;
   position: relative;
 }
-.mobile-menu__linc {
+.mobile-menu__link {
   text-decoration: none;
   color: #1b1c21;
 }
-.mobile-menu__linc:hover {
+.mobile-menu__link:hover {
   opacity: 0.5;
 }
-.mobile-menu__linc:active {
+.mobile-menu__link:active {
   opacity: 0.3;
 }
-.mobile-menu__linc--number {
+.mobile-menu__link--number {
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
   margin-top: 12px;
 }
-.mobile-menu__linc--active {
+.mobile-menu__link--active {
   color: #7e7e82;
 }
 
-.mobile-menu__linc--active::after {
+.mobile-menu__link--active::after {
   content: "";
   width: 4px;
   height: 32px;
@@ -227,7 +228,6 @@ body {
 .mobile-menu__button--profile {
   background-image: url("../images/header/ic/profile.svg");
 }
-/* язык радио */
 .mobile-menu__languages {
   margin-top: 40px;
   margin-bottom: 32px;
@@ -285,9 +285,31 @@ body {
 .main__menu-short {
   display: none;
 }
+
 .main__navigation {
   margin-bottom: 24px;
 }
+.main__navigation-link {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #7e7e82;
+}
+.main__navigation-link--active {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+.main__navigation-link:hover {
+  opacity: 0.5;
+}
+.main__navigation-link :active {
+  opacity: 0.3;
+}
+
 .main__navigation-list {
   list-style-type: none;
   padding: 0;
@@ -296,6 +318,7 @@ body {
   display: flex;
   white-space: nowrap;
   overflow: scroll;
+  align-items: center;
 }
 /* Тускнение */
 .main__navigation-list::before {
@@ -317,18 +340,6 @@ body {
 
 .main__navigation-list::-webkit-scrollbar-thumb {
   display: none;
-}
-.main__navigation-button {
-  font-size: 16px;
-  line-height: 24px;
-  padding: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  color: #7e7e82;
-}
-.main__navigation-button--active {
-  border: 2px solid #b8ffec;
-  border-radius: 6px;
 }
 
 .main__content-paragraph {
