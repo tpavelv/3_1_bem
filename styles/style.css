@@ -169,26 +169,27 @@ body {
   margin-bottom: 32px;
   position: relative;
 }
-.mobile-menu__linc {
+.mobile-menu__link {
   text-decoration: none;
   color: #1b1c21;
 }
-.mobile-menu__linc:hover {
+.mobile-menu__link:hover {
   opacity: 0.5;
 }
-.mobile-menu__linc:active {
+.mobile-menu__link:active {
   opacity: 0.3;
 }
-.mobile-menu__linc--number {
+.mobile-menu__link--number {
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
+  margin-top: 12px;
 }
-.mobile-menu__linc--active {
+.mobile-menu__link--active {
   color: #7e7e82;
 }
 
-.mobile-menu__linc--active::after {
+.mobile-menu__link--active::after {
   content: "";
   width: 4px;
   height: 32px;
@@ -202,20 +203,19 @@ body {
 
 .mobile-menu__contacts {
   margin-top: auto;
-}
-.mobile-menu__contact-list {
-  list-style-type: none;
   padding: 0 24px;
-  margin: 0;
-  margin-top: 268px;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu__contact-item {
   margin-bottom: 12px;
 }
+
 .mobile-menu_contacts-buttons {
   display: flex;
   gap: 16px;
   margin-bottom: 16px;
+  margin-top: 236px;
 }
 
 .mobile-menu__button--call {
@@ -227,27 +227,39 @@ body {
 .mobile-menu__button--profile {
   background-image: url("../images/header/ic/profile.svg");
 }
-
-.mobile-menu__languages-list {
-  list-style-type: none;
-  margin: 0;
+.mobile-menu__languages {
   margin-top: 40px;
   margin-bottom: 32px;
   padding: 0 24px;
   display: flex;
   gap: 7px;
 }
+
 .mobile-menu__languages-item {
   margin: 0;
   padding: 0;
 }
-.mobile-menu__languages-button {
-  font-size: 16px;
-  line-height: 24px;
-}
-.mobile-menu__languages-button--active {
+.mobile-menu__languages-radio:checked + .mobile-menu__languages-radio-name {
   color: #7e7e82;
 }
+.mobile-menu__languages-radio:hover + .mobile-menu__languages-radio-name {
+  opacity: 0.5;
+}
+.mobile-menu__languages-radio:active + .mobile-menu__languages-radio-name {
+  opacity: 0.3;
+}
+.mobile-menu__languages-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* язык радио */
+
 /* MAIN */
 .main__title {
   margin: 0;
@@ -272,9 +284,31 @@ body {
 .main__menu-short {
   display: none;
 }
+
 .main__navigation {
   margin-bottom: 24px;
 }
+.main__navigation-link {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #7e7e82;
+}
+.main__navigation-link--active {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+.main__navigation-link:hover {
+  opacity: 0.5;
+}
+.main__navigation-link :active {
+  opacity: 0.3;
+}
+
 .main__navigation-list {
   list-style-type: none;
   padding: 0;
@@ -283,6 +317,7 @@ body {
   display: flex;
   white-space: nowrap;
   overflow: scroll;
+  align-items: center;
 }
 /* Тускнение */
 .main__navigation-list::before {
@@ -304,18 +339,6 @@ body {
 
 .main__navigation-list::-webkit-scrollbar-thumb {
   display: none;
-}
-.main__navigation-button {
-  font-size: 16px;
-  line-height: 24px;
-  padding: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  color: #7e7e82;
-}
-.main__navigation-button--active {
-  border: 2px solid #b8ffec;
-  border-radius: 6px;
 }
 
 .main__content-paragraph {
