@@ -130,7 +130,6 @@ body {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  display: none; /* !!! */
 }
 
 .mobile-menu__header {
