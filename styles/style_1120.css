@@ -48,6 +48,12 @@
   order: -1;
   align-self: center;
 }
+.button__label:hover {
+  opacity: 0.5;
+}
+.button__label:active {
+  opacity: 0.3;
+}
 .main__menu-button--repair {
   background-image: url("../images/header/ic/repair.svg");
 }
