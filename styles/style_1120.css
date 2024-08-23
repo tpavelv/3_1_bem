@@ -66,6 +66,7 @@
   min-width: 1064px;
   margin-left: 34px;
   margin-right: 24px;
+  margin-bottom: 51px;
   gap: 36px;
 }
 .main__content-description {
@@ -130,7 +131,7 @@
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url("/images/main/ic/expand.svg");
+  background-image: url("../images/main/ic/expand.svg");
   left: -33px;
   position: absolute;
 }

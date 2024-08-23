@@ -262,6 +262,9 @@ body {
 /* язык радио */
 
 /* MAIN */
+.main-content {
+  margin-bottom: 24px;
+}
 .main__title {
   margin: 0;
   margin-bottom: 24px;
