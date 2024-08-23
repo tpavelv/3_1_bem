@@ -75,3 +75,53 @@
   flex-grow: 1;
   border-radius: 5px;
 }
+/* Ремонтируемые бренды / слайдер */
+.main-brands {
+  height: 288px;
+}
+.main-brands__swiper {
+  padding: 24px;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.subtitle {
+  padding: 16px 24px;
+}
+.main-brands__cards {
+  flex-wrap: wrap;
+  height: 160px;
+  row-gap: 16px;
+  column-gap: 24px;
+  overflow: hidden;
+}
+.brand-card {
+  flex-basis: 190px;
+}
+.main-brands__swiper-button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-left: 33px;
+  color: #1b1c21;
+  position: relative;
+  margin-top: 24px;
+  display: block;
+}
+.main-brands__swiper-button::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("/images/main/ic/expand.svg");
+  left: -33px;
+  position: absolute;
+}
+.main-brands--larger {
+  height: auto;
+}
+.main-brands__cards--larger {
+  height: auto;
+}
+.button_icon--rotate::before {
+  transform: scaleY(-1);
+}

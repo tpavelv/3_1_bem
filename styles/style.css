@@ -374,3 +374,94 @@ body {
   width: 100%;
   height: auto;
 }
+
+/* Ремонтируемые бренды / слайдер */
+.main-brands {
+  height: 196px;
+  margin-bottom: 24px;
+}
+.subtitle {
+  margin: 0;
+  padding: 16px;
+  line-height: 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+  position: relative;
+}
+.subtitle::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #d9fff5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-brands__swiper {
+  padding-left: 16px;
+  padding-top: 16px;
+}
+.main-brands__cards {
+  column-gap: 16px;
+  height: 100px;
+}
+.main-brands__swiper::before {
+  content: "";
+  width: 24px;
+  height: 74px;
+  position: absolute;
+  right: 0px;
+  top: 16px;
+  background-image: linear-gradient(
+    to left,
+    rgba(248, 248, 248, 1),
+    rgba(248, 248, 248, 0)
+  );
+  z-index: 100;
+}
+.brand-card {
+  flex-basis: 206px;
+  height: 70px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-card__link {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #ff3e79;
+  border-radius: 50%;
+  background: url(/images/main/brands/dropdown.svg) 50% 50% no-repeat;
+}
+
+/* Пагинация */
+.main-brands__swiper-pagination .swiper-pagination-bullet {
+  background-color: #dddddd;
+  width: 12px;
+  height: 12px;
+}
+.main-brands__swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+.main-brands .main-brands__swiper-pagination .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+.main-brands__swiper .main-brands__swiper-pagination {
+  top: 100px;
+  padding: 0;
+  margin: 0;
+  height: 14px;
+}
+
+.main-brands__swiper-button {
+  display: none;
+}
