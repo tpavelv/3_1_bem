@@ -112,7 +112,7 @@
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url("./images/main/ic/expand.svg");
+  background-image: url("../images/main/ic/expand.svg");
   left: -33px;
   position: absolute;
 }
