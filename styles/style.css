@@ -36,9 +36,9 @@ body {
   border: none;
   font-family: "TT Lakes", sans-serif;
 }
-.button:hover {
+/* .button:hover {
   opacity: 0.5;
-}
+} */
 .button:active {
   opacity: 0.3;
 }
