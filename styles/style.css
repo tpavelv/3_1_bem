@@ -122,7 +122,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   box-shadow: -2px 0px 4px 0px #454f7e05, 16px 0px 52px 0px #0e185033;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   background-color: #ffffff;
