@@ -441,7 +441,7 @@ body {
   height: 36px;
   border: 2px solid #ff3e79;
   border-radius: 50%;
-  background: url(/images/main/brands/dropdown.svg) 50% 50% no-repeat;
+  background: url(./images/main/brands/dropdown.svg) 50% 50% no-repeat;
 }
 
 /* Пагинация */
